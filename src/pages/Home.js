@@ -34,7 +34,7 @@ export const Home = () => {
             </Link>
           </div>
 
-          <div className="absolute w-full right-0 bottom-0">
+          <div className="absolute w-full flex justify-end right-0 bottom-0">
             <Slider />
           </div>
         </main>

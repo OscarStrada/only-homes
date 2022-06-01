@@ -55,11 +55,11 @@ export const Navbar = () => {
 
           {/* Right - phone */}
           <div
-            className={`space-x-4 text-[#556277] hidden md:flex${
-              navbar ? '' : 'md:text-white'
+            className={`space-x-4 hidden md:flex items-center ${
+              navbar ? 'text-[#556277]' : 'text-white'
             }`}
           >
-            <PhoneIcon className="md:flex hidden h-6" />
+            <PhoneIcon className="h-6" />
             <span className="tracking-wider">+52 222 928 4704</span>
           </div>
         </div>

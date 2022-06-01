@@ -19,7 +19,7 @@ export const Slider = () => {
           </p>
         </div>
         {/* right */}
-        <div className="w-[80px] h-full flex justify-center items-center">
+        <div className="w-[80px] h-full hidden md:flex justify-center items-center">
           <img src="/chevron-right.svg" alt="chevron icon" />
         </div>
       </div>

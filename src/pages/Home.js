@@ -16,17 +16,17 @@ export const Home = () => {
         />
         <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-40 mix-blend-multiply z-20"></div>
 
-        <main className="absolute space-y-16 top-16 left-0 md:top-20 md:left-20 w-full h-[calc(100vh-64px)] md:w-[calc(100vw-80px)] md:h-[calc(100vh-80px)] z-30">
-          <div className="pl-[30px] md:pl-[80px] pt-28 md:pt-36 w-3/4 md:w-1/2 space-y-8 text-white">
-            <p className="font-inter font-normal uppercase tracking-[0.2em] text-xs">
+        <main className="absolute space-y-10 md:space-y-16 top-16 left-0 md:top-20 md:left-20 w-full h-[calc(100vh-64px)] md:w-[calc(100vw-80px)] md:h-[calc(100vh-80px)] z-30">
+          <div className="pl-[30px] md:pl-[80px] pt-20 md:pt-36 w-3/4 md:w-1/2 space-y-8 text-white">
+            <p className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
               Find homes for sale in tulum
             </p>
-            <h1 className="text-[65px] md:text-[75px] font-semibold leading-none font-poppins">
+            <h1 className="text-5xl md:text-[75px] font-semibold leading-none font-poppins">
               Discover your next home
             </h1>
           </div>
 
-          <div className="pl-[30px] md:pl-[80px] w-[280px]">
+          <div className="pl-[30px] md:pl-[80px] w-[240px] md:w-[280px]">
             <Link to="/contact">
               <Button color={'white'} textColor="#061D3A">
                 All properties

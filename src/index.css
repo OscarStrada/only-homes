@@ -28,6 +28,11 @@ code {
   font-size: 18px;
 }
 
+.bg-plants {
+  background-image: url(/public/background-plants.jpg);
+  background-size: cover;
+}
+
 .font-poppins {
   font-family: 'Poppins', sans-serif;
 }

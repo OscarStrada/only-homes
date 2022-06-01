@@ -10,7 +10,7 @@ export const Navbar = () => {
     const scrollY = window.scrollY;
     // const viewportHeight = window.innerHeight;
 
-    scrollY > 10 ? setNavbar(true) : setNavbar(false);
+    scrollY > 0 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener('scroll', changeNavbar);
@@ -35,7 +35,7 @@ export const Navbar = () => {
         >
           {/* Left - logo */}
           <span
-            className={`md:logo-big logo-small tracking-widest text-black ${
+            className={`md:logo-big logo-small tracking-widest text-[#556277] ${
               navbar ? '' : 'md:text-white'
             }`}
           >
@@ -48,14 +48,14 @@ export const Navbar = () => {
               navbar ? 'hidden lg:flex' : ''
             } uppercase text-[#556277] tracking-widest`}
           >
-            <li>Homes</li>
-            <li>Contact</li>
-            <li>Blog</li>
+            <li className="cursor-pointer hover:text-black">Homes</li>
+            <li className="cursor-pointer hover:text-black">Contact</li>
+            <li className="cursor-pointer hover:text-black">Blog</li>
           </ul>
 
           {/* Right - phone */}
           <div
-            className={`space-x-4 text-black hidden md:flex${
+            className={`space-x-4 text-[#556277] hidden md:flex${
               navbar ? '' : 'md:text-white'
             }`}
           >

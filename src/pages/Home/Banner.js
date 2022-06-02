@@ -20,15 +20,15 @@ export const Banner = () => {
     <>
       <div className="relative w-full h-screen bg-blend-multiply">
         <Hero source={imageSelected.url} />
-        <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-[0.45] mix-blend-multiply z-20"></div>
+        <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-50 mix-blend-multiply z-20"></div>
 
         <main className="absolute space-y-10 md:space-y-12 top-16 left-0 md:top-20 md:left-20 w-full h-[calc(100vh-64px)] md:w-[calc(100vw-80px)] md:h-[calc(100vh-80px)] z-30">
           <div className="pl-[30px] md:pl-[80px] pt-20 md:pt-36 w-3/4 md:w-1/2 space-y-8 text-white">
             <p className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
-              Find homes for sale in tulum
+              Search your next home
             </p>
             <h1 className="text-5xl md:text-[75px] font-semibold leading-none font-poppins">
-              Discover your next home
+              Find homes for sale in Tulum
             </h1>
           </div>
 
@@ -42,7 +42,12 @@ export const Banner = () => {
 
           {/* Slider */}
           <div className="absolute w-full flex justify-end right-0 bottom-0">
-            <Slider onIndexChanged={handleChangeSelectedImage} />
+            <Slider
+              onIndexChanged={handleChangeSelectedImage}
+              title={imageSelected.title}
+              price={imageSelected.price}
+              location={imageSelected.location}
+            />
           </div>
         </main>
       </div>

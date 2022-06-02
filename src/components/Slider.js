@@ -1,4 +1,4 @@
-export const Slider = ({ onIndexChanged }) => {
+export const Slider = ({ onIndexChanged, title, price, location }) => {
   return (
     <>
       <div className="flex w-full md:w-[500px] h-[140px] bg-white rounded-tl-md">
@@ -20,10 +20,10 @@ export const Slider = ({ onIndexChanged }) => {
         {/* middle */}
         <div className="flex flex-col flex-1 h-full bg-[#FAFBF9] px-[35px] justify-center items-start space-y-3">
           <span className="text-[22px] font-medium text-[#061D3A]">
-            Kalomthe, Tulum
+            {title}, {location}
           </span>
           <p className="font-inter text-xs font-light text-[#061D3A] tracking-[0.2em] uppercase">
-            for sale $550,000 USD
+            For sale ${price} USD
           </p>
         </div>
         {/* right */}

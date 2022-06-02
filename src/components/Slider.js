@@ -1,4 +1,4 @@
-export const Slider = () => {
+export const Slider = ({ onIndexChanged }) => {
   return (
     <>
       <div className="flex w-full md:w-[500px] h-[140px] bg-white rounded-tl-md">
@@ -8,11 +8,13 @@ export const Slider = () => {
             src="/arrow-right.svg"
             alt="arrow right"
             className="cursor-pointer"
+            onClick={() => onIndexChanged(1)}
           />
           <img
             src="/arrow-left.svg"
             alt="arrow left"
             className="cursor-pointer"
+            onClick={() => onIndexChanged(-1)}
           />
         </div>
         {/* middle */}

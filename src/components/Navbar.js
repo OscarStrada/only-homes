@@ -19,7 +19,7 @@ export const Navbar = () => {
     <>
       <nav
         className={`w-full h-16 md:h-20 flex items-center justify-between fixed z-50 bg-white ${
-          navbar ? '' : 'md:bg-transparent'
+          navbar ? 'border-b-[1px] border-[#e9e9e9]' : 'md:bg-transparent'
         } transition duration-300 ease-out`}
       >
         {/* Left menu */}
@@ -30,7 +30,7 @@ export const Navbar = () => {
         {/* Right menu */}
         <div
           className={`w-full h-full px-[25px] md:px-[40px] flex flex-1 items-center justify-between ${
-            navbar ? 'border-b-[1px] border-[#e9e9e9]' : ''
+            navbar ? '' : ''
           }`}
         >
           {/* Left - logo */}

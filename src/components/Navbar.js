@@ -22,14 +22,9 @@ export const Navbar = () => {
           navbar ? 'border-b-[1px] border-[#e9e9e9]' : 'md:bg-transparent'
         } transition duration-300 ease-out`}
       >
-        {/* Left menu */}
-        <div className="w-16 h-16 md:w-20 md:h-20 flex justify-center items-center border-r-[1px] border-b-[1px] border-[#e9e9e9] bg-white">
-          <img src="/menu-icon.svg" className="cursor-pointer" />
-        </div>
-
-        {/* Right menu */}
+        {/* Navbar container */}
         <div
-          className={`w-full h-full px-[25px] md:px-[40px] flex flex-1 items-center justify-between ${
+          className={`w-full h-full px-[25px] md:px-20 flex flex-1 items-center justify-between ${
             navbar ? '' : ''
           }`}
         >

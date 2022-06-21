@@ -27,7 +27,7 @@ export const Banner = () => {
             <p className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
               Search your next home
             </p>
-            <h1 className="text-5xl md:text-[75px] font-semibold leading-tight font-poppins">
+            <h1 className="text-4xl md:text-[75px] font-semibold leading-tight font-poppins">
               Find homes for sale in Tulum
             </h1>
           </div>

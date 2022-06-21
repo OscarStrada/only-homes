@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Title = ({ title, subtitle }) => {
   return (
-    <div className="text-center">
+    <div className="text-center my-9 md:my-16 flex flex-col">
       <p className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
         {subtitle}
       </p>

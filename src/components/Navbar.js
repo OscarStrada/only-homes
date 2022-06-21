@@ -1,6 +1,6 @@
 import { PhoneIcon } from '@heroicons/react/solid';
 import { React, useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -29,13 +29,15 @@ export const Navbar = () => {
           }`}
         >
           {/* Left - logo */}
-          <span
-            className={`md:logo-big logo-small tracking-widest text-[#556277] ${
-              navbar ? '' : 'md:text-white'
-            }`}
-          >
-            only homes
-          </span>
+          <Link to={'/'}>
+            <span
+              className={`md:logo-big logo-small tracking-widest text-[#556277] ${
+                navbar ? '' : 'md:text-white'
+              }`}
+            >
+              only homes
+            </span>
+          </Link>
 
           {/* Middle - menu */}
           <ul

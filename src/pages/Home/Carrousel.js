@@ -5,8 +5,10 @@ import { slider } from '../../data/db';
 
 export const Carrousel = () => {
   return (
-    <section className="bg-plants px-[25px] md:px-20 py-[60px] md:py-[140px]">
-      <Title title={'Listing Properties'} subtitle={'Featured houses'} />
+    <section className="px-[25px] md:px-20 py-[60px] md:py-[140px] bg-plants">
+      <div className="mb-9 md:mb-16">
+        <Title title={'Featured Properties'} subtitle={'Listing houses'} />
+      </div>
 
       <div
         id="carrousel"

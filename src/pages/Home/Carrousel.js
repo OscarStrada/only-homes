@@ -1,4 +1,3 @@
-import React from 'react';
 import { PropertyCard } from '../../components/PropertyCard';
 import { Title } from '../../components/Title';
 import { slider } from '../../data/db';

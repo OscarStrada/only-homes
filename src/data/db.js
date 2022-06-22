@@ -87,6 +87,6 @@ export const cards = [
   {
     id: '4',
     url: '/images/tuluminvest',
-    alt: 'tulum night club',
+    alt: 'tulum beach',
   },
 ];

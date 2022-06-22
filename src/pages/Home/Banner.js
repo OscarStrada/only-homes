@@ -31,8 +31,8 @@ export const Banner = () => {
             </h1>
           </div>
 
-          <div className="pl-[25px] md:pl-[80px] w-[240px] md:w-[280px]">
-            <Button color={'white'} textColor="#061D3A" url={'/houses'}>
+          <div className="pl-[25px] md:pl-[80px] w-[240px] md:w-[300px]">
+            <Button border={'white'} textcolor={'white'} url={'/houses'}>
               All properties
             </Button>
           </div>

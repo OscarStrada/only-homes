@@ -1,6 +1,7 @@
 import { Banner } from './Banner';
 import { BlogBanner } from './BlogBanner';
 import { Carrousel } from './Carrousel';
+import { InvestInTulum } from './InvestInTulum';
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
       <Banner />
       <Carrousel />
       <BlogBanner />
+      <InvestInTulum />
     </div>
   );
 };

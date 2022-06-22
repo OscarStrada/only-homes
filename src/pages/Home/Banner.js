@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import { Hero } from '../../components/Hero';
 import { heroProperties } from '../../data/db';
@@ -33,11 +32,9 @@ export const Banner = () => {
           </div>
 
           <div className="pl-[25px] md:pl-[80px] w-[240px] md:w-[280px]">
-            <Link to="/contact">
-              <Button color={'white'} textColor="#061D3A">
-                All properties
-              </Button>
-            </Link>
+            <Button color={'white'} textColor="#061D3A" url={'/houses'}>
+              All properties
+            </Button>
           </div>
 
           {/* Slider */}

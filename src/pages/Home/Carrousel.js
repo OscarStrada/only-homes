@@ -11,8 +11,8 @@ export const Carrousel = () => {
       </div>
 
       <div
-        id="carrousel"
-        className="flex overflow-scroll scrollbar-hide scroll-smooth p-4 -ml-4"
+        className="flex overflow-scroll scrollbar-hide scroll-smooth 
+      p-4 -ml-4"
       >
         <div className="flex space-x-10">
           {slider?.map(({ url, id, title, location, price, description }) => (

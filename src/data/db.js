@@ -67,3 +67,26 @@ export const slider = [
     url: '/images/hero/itzamara.jpg',
   },
 ];
+
+export const cards = [
+  {
+    id: '1',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+  },
+  {
+    id: '2',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+  },
+  {
+    id: '3',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+  },
+  {
+    id: '4',
+    url: '/images/tuluminvest',
+    alt: 'tulum night club',
+  },
+];

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from './Button';
 
 export const PropertyCard = ({
@@ -11,9 +10,9 @@ export const PropertyCard = ({
   price,
 }) => {
   return (
-    <Link to={'/'}>
+    <section>
       {/* main container */}
-      <div className="md:hover:scale-105 transform transition duration-300 ease-out h-72 w-72 md:w-[320px] md:h-[440px] rounded-xl flex flex-col bg-[#f9f9f9]">
+      <div className="md:hover:scale-105 transform transition duration-300 ease-out w-[320px] h-[440px] rounded-xl flex flex-col bg-[#f9f9f9]">
         {/* Top - image */}
         <div className="h-1/2 rounded-xl">
           <img
@@ -39,13 +38,13 @@ export const PropertyCard = ({
             </div>
             {/* Button */}
             <div className="w-[100px]">
-              <Button small color={'#ea6c18'} textcolor="#ffffff">
+              <Button small color={'#ea6c18'} textcolor="#ffffff" url={'/'}>
                 Details
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </Link>
+    </section>
   );
 };

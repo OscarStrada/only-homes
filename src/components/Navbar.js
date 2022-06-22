@@ -45,19 +45,19 @@ export const Navbar = () => {
               navbar ? 'hidden lg:flex' : ''
             } uppercase text-[#556277] tracking-widest`}
           >
-            <li className="cursor-pointer hover:text-black">Homes</li>
-            <li className="cursor-pointer hover:text-black">Contact</li>
-            <li className="cursor-pointer hover:text-black">Blog</li>
+            <li className="cursor-pointer hover:text-black text-sm">Homes</li>
+            <li className="cursor-pointer hover:text-black text-sm">Contact</li>
+            <li className="cursor-pointer hover:text-black text-sm">Blog</li>
           </ul>
 
           {/* Right - phone */}
           <div
-            className={`space-x-4 hidden md:flex items-center ${
+            className={`space-x-3 hidden md:flex items-center ${
               navbar ? 'text-[#556277]' : 'text-white'
             }`}
           >
-            <PhoneIcon className="h-6" />
-            <span className="tracking-wider">+52 222 928 4704</span>
+            <PhoneIcon className="h-5" />
+            <span className="tracking-wider text-sm">+52 222 928 4704</span>
           </div>
         </div>
       </nav>

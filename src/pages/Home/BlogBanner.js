@@ -3,10 +3,10 @@ import { Title } from '../../components/Title';
 
 export const BlogBanner = () => {
   return (
-    <section className="relative px-20 h-[530px]">
+    <section className="relative px-[25px] md:px-20 h-[530px]">
       <div className="relative w-full h-[530px]">
         <img
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           src="/images/tulum.jpg"
           alt="Tulum México cenote"
         />
@@ -20,8 +20,8 @@ export const BlogBanner = () => {
             subtitle={'tulum mexico'}
             isForWhiteBackground
           />
-          <div className="w-[220px] md:w-[200px]">
-            <Button color={'white'} textColor="#061D3A">
+          <div className="w-[180px] md:w-[200px]">
+            <Button color={'white'} textColor="#061D3A" url={'/blog'}>
               Contact Us
             </Button>
           </div>

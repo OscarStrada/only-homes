@@ -23,7 +23,7 @@ export const Banner = () => {
         <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-50 mix-blend-multiply z-20"></div>
 
         <main className="absolute space-y-10 md:space-y-12 top-16 left-0 md:top-20 w-full h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] z-30">
-          <div className="pl-[25px] md:pl-20 pt-20 md:pt-36 w-3/4 md:w-1/2 space-y-8 text-white">
+          <div className="pl-[25px] md:pl-20 pt-20 md:pt-32 w-3/4 md:w-1/2 space-y-8 text-white">
             <p className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
               Search your next home
             </p>

@@ -20,7 +20,7 @@ export const BlogBanner = () => {
             subtitle={'tulum mexico'}
             isForWhiteBackground
           />
-          <div className="w-[180px] md:w-[200px]">
+          <div className="w-[190px] md:w-[200px]">
             <Button color={'white'} textColor="#061D3A" url={'/blog'}>
               Contact Us
             </Button>

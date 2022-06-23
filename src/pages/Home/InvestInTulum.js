@@ -7,7 +7,7 @@ export const InvestInTulum = () => {
   return (
     <div
       className="w-full bg-[#FAFBF9] my-[60px] 
-    md:mb-0 md:mt-[140px] pt-28 pb-60"
+    md:mb-0 md:mt-[140px] pt-28 pb-40 md:pb-60"
     >
       <div className="flex flex-col md:flex-row px-[25px] md:px-20 pb-28 md:space-x-28">
         {/* Title */}

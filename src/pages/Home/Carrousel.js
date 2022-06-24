@@ -28,9 +28,9 @@ export const Carrousel = () => {
       >
         <div className="flex space-x-10">
           {featuredProperties?.map(
-            ({ name, location, price, url, description, id }) => (
+            ({ name, location, price, url, description }) => (
               <PropertyCard
-                key={id}
+                key={name}
                 image={urlFor(url)}
                 title={name}
                 location={location}

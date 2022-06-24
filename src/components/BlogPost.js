@@ -1,6 +1,6 @@
 import { LabelPost } from './LabelPost';
 
-export const BlogPost = (date, image, title, alt) => {
+export const BlogPost = ({ date, image, title, alt, id }) => {
   return (
     <div className="flex space-x-7">
       <div className="w-32 h-32">
@@ -11,8 +11,10 @@ export const BlogPost = (date, image, title, alt) => {
         />
       </div>
       <div className="space-y-4">
-        <LabelPost date={date} />
-        <h4 className="text-lg font-semibold">{title}</h4>
+        <div className="md:w-[155px]">
+          <LabelPost date={date} />
+        </div>
+        <h4 className="text-lg font-semibold text-[#061D3A]">{title}</h4>
       </div>
     </div>
   );

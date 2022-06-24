@@ -98,26 +98,30 @@ export const cards = [
 export const posts = [
   {
     id: '1',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
-    date: 'April 18, 2022',
   },
   {
     id: '2',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
-    date: 'April 18, 2022',
   },
   {
     id: '3',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
-    date: 'April 18, 2022',
   },
   {
     id: '4',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
-    date: 'April 18, 2022',
   },
 ];

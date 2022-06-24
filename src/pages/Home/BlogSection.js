@@ -1,22 +1,24 @@
 import React from 'react';
+import { BlogPost } from '../../components/BlogPost';
 import { Button } from '../../components/Button';
 import { LabelPost } from '../../components/LabelPost';
+import { posts } from '../../data/db';
 
 export const BlogSection = () => {
   return (
-    <section className="w-full flex justify-center md:-mt-16 md:px-40">
+    <section className="w-full flex justify-center md:-mt-16 px-5 md:px-40">
       <div className="w-full bg-white rounded-2xl md:p-[50px]">
         <div className="flex">
           {/* Left */}
           <div className="relative">
             <img
-              className="w-[550px] h-[580px] md:rounded-2xl"
+              className="w-[550px] h-[500px] md:h-[580px] md:rounded-2xl"
               src="/images/tuluminvest/3.jpg"
               alt=""
             />
             <div className="absolute md:-bottom-32 md:left-[calc(50%-235px)]">
               <div className="md:w-[155px] absolute -top-5 left-9">
-                <LabelPost text={'April 18, 2021'} />
+                <LabelPost date={'April 18, 2021'} />
               </div>
               <div className="md:w-[470px] bg-white px-9 py-12 rounded-xl shadow-3xl space-y-7">
                 <h4 className="text-2xl font-semibold text-[#061D3A]">
@@ -41,6 +43,11 @@ export const BlogSection = () => {
           </div>
 
           {/* Right */}
+          <div>
+            {posts?.map(({ url, alt, date, id }) => {
+              <BlogPost image={url} alt={alt} date={date} key={id} />;
+            })}
+          </div>
         </div>
       </div>
     </section>

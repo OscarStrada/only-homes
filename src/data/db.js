@@ -73,20 +73,51 @@ export const cards = [
     id: '1',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
+    date: 'April 18, 2022',
   },
   {
     id: '2',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
+    date: 'April 18, 2022',
   },
   {
     id: '3',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
+    date: 'April 18, 2022',
   },
   {
     id: '4',
     url: '/images/tuluminvest',
     alt: 'tulum beach',
+    date: 'April 18, 2022',
+  },
+];
+
+export const posts = [
+  {
+    id: '1',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+    date: 'April 18, 2022',
+  },
+  {
+    id: '2',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+    date: 'April 18, 2022',
+  },
+  {
+    id: '3',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+    date: 'April 18, 2022',
+  },
+  {
+    id: '4',
+    url: '/images/tuluminvest',
+    alt: 'tulum beach',
+    date: 'April 18, 2022',
   },
 ];

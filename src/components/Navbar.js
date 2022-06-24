@@ -41,7 +41,7 @@ export const Navbar = () => {
 
           {/* Middle - menu */}
           <ul
-            className={`w-full h-full justify-center items-center space-x-12 flex-1 text-base hidden ${
+            className={`w-full h-full justify-center items-center space-x-12 flex-1 hidden ${
               navbar ? 'hidden lg:flex' : ''
             } uppercase text-[#556277] tracking-widest`}
           >

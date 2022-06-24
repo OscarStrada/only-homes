@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer';
 import { Banner } from './Banner';
 import { BlogBanner } from './BlogBanner';
 import { BlogSection } from './BlogSection';
@@ -6,12 +7,13 @@ import { InvestInTulum } from './InvestInTulum';
 
 export const Home = () => {
   return (
-    <div className="h-[5000px] bg-white">
+    <div>
       <Banner />
       <Carrousel />
       <BlogBanner />
       <InvestInTulum />
       <BlogSection />
+      <Footer />
     </div>
   );
 };

@@ -9,6 +9,8 @@ export const PropertyCard = ({
   description,
   price,
 }) => {
+  const usd = new Intl.NumberFormat('en-us');
+
   return (
     <section>
       {/* main container */}
@@ -34,7 +36,7 @@ export const PropertyCard = ({
               <span className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
                 Price
               </span>
-              <span className="font-medium">${price} USD</span>
+              <span className="font-medium">${usd.format(price)} USD</span>
             </div>
             {/* Button */}
             <div className="w-[100px]">

@@ -1,4 +1,5 @@
 export const Slider = ({ onIndexChanged, title, price, location }) => {
+  const usd = new Intl.NumberFormat('en-us');
   return (
     <>
       <div className="flex w-full md:w-[500px] h-[140px] bg-white rounded-tl-md">
@@ -23,7 +24,7 @@ export const Slider = ({ onIndexChanged, title, price, location }) => {
             {title}, {location}
           </span>
           <p className="font-inter text-xs font-light text-[#061D3A] tracking-[0.2em] uppercase">
-            For sale ${price} USD
+            For sale ${usd.format(price)} USD
           </p>
         </div>
         {/* right */}

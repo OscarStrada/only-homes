@@ -7,7 +7,7 @@ import { posts } from '../../data/db';
 export const BlogSection = () => {
   return (
     <section className="w-full flex justify-center md:-mt-16 px-5 md:px-20">
-      <div className="w-full bg-white rounded-2xl md:p-[50px] flex">
+      <div className="w-full bg-white rounded-2xl md:p-[50px] flex flex-col md:flex-row">
         {/* Left */}
         <div className="relative">
           <img
@@ -36,11 +36,11 @@ export const BlogSection = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="flex-1 pl-[65px] space-y-10">
+        <div className="flex-1 md:pl-[65px] space-y-10">
           <h4 className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs text-gray-500">
             Popular posts
           </h4>
-          <div className="space-y-10">
+          <div className="pt-96 md:pt-0 space-y-10">
             {posts?.map(({ title, url, alt, date, id }) => (
               <BlogPost
                 title={title}

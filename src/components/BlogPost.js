@@ -2,8 +2,8 @@ import { LabelPost } from './LabelPost';
 
 export const BlogPost = ({ date, image, title, alt, id }) => {
   return (
-    <div className="flex space-x-7">
-      <div className="w-32 h-32">
+    <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-7">
+      <div className="w-full h-72 md:w-32 md:h-32">
         <img
           className="w-full h-full rounded-md object-cover"
           src={image}

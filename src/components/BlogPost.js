@@ -11,7 +11,7 @@ export const BlogPost = ({ date, image, title, alt, id }) => {
         />
       </div>
       <div className="space-y-4">
-        <div className="md:w-[155px]">
+        <div className="w-1/2 md:w-[155px]">
           <LabelPost date={date} />
         </div>
         <h4 className="text-lg font-semibold text-[#061D3A]">{title}</h4>

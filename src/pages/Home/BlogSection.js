@@ -1,10 +1,22 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { BlogPost } from '../../components/BlogPost';
 import { Button } from '../../components/Button';
 import { LabelPost } from '../../components/LabelPost';
-import { posts } from '../../data/db';
+
+import { urlFor, client } from '../../client';
 
 export const BlogSection = () => {
+  const [blogPosts, setBlogPosts] = useState(null);
+
+  useEffect(() => {
+    const query = '*[_type == "post"]';
+
+    client.fetch(query).then((data) => {
+      const filterPosts = data.filter((post) => post.featured === true);
+      setBlogPosts(filterPosts);
+    });
+  }, []);
+
   return (
     <section className="w-full flex justify-center md:-mt-16 px-5 md:px-20">
       <div className="w-full bg-white rounded-2xl md:p-[50px] flex flex-col md:flex-row">
@@ -41,12 +53,12 @@ export const BlogSection = () => {
             Popular posts
           </h4>
           <div className="pt-96 md:pt-0 space-y-10">
-            {posts?.map(({ title, url, alt, date, id }) => (
+            {blogPosts?.map(({ title, mainImage, alt, publishedAt, id }) => (
               <BlogPost
                 title={title}
-                image={`${url}/${id}.jpg`}
+                image={urlFor(mainImage)}
                 alt={alt}
-                date={date}
+                date={publishedAt}
                 key={id}
               />
             ))}

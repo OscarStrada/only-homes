@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -7,10 +6,15 @@ export const Footer = () => {
       <div>
         <span className="uppercase text-[#556277] text-sm tracking-widest">
           © 2022 Only homes Tulum, powered by
-          <Link className={'hover:text-black'} to={'https://khutz.com'}>
+          <a
+            className={'hover:text-black'}
+            href="https://khutz.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             {' '}
             khutz
-          </Link>
+          </a>
         </span>
       </div>
     </div>

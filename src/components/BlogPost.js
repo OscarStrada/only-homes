@@ -10,7 +10,7 @@ export const BlogPost = ({ date, image, title, alt, id }) => {
           alt={alt}
         />
       </div>
-      <div className="space-y-4 -mt-5 pl-5 md:-mt-0 md:pl-0">
+      <div className="space-y-4 -mt-5 pl-5 md:-mt-0 md:pl-0 flex-1">
         <div className="w-1/2 md:w-[155px]">
           <LabelPost date={date} />
         </div>

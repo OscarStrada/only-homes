@@ -100,28 +100,54 @@ export const posts = [
     id: '1',
     title: 'What will website be like in 100 years?',
     date: 'April 18, 2022',
-    url: '/images/tuluminvest',
+    url: '/images/blog',
     alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
   },
   {
     id: '2',
     title: 'What will website be like in 100 years?',
     date: 'April 18, 2022',
-    url: '/images/tuluminvest',
+    url: '/images/blog',
     alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
   },
   {
     id: '3',
     title: 'What will website be like in 100 years?',
     date: 'April 18, 2022',
-    url: '/images/tuluminvest',
+    url: '/images/blog',
     alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
   },
   {
     id: '4',
     title: 'What will website be like in 100 years?',
     date: 'April 18, 2022',
-    url: '/images/tuluminvest',
+    url: '/images/blog',
     alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+  },
+  {
+    id: '5',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
+    url: '/images/blog',
+    alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+  },
+  {
+    id: '2',
+    title: 'What will website be like in 100 years?',
+    date: 'April 18, 2022',
+    url: '/images/blog',
+    alt: 'tulum beach',
+    description:
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
   },
 ];

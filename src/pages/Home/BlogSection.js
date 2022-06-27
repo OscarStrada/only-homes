@@ -27,7 +27,7 @@ export const BlogSection = () => {
             src="/images/tuluminvest/3.jpg"
             alt=""
           />
-          <div className="absolute md:-bottom-32 md:left-[calc(50%-235px)]">
+          <div className="relative md:absolute md:-bottom-10 md:left-[calc(50%-235px)]">
             <div className="md:w-[155px] absolute -top-5 left-9">
               <LabelPost date={'April 18, 2021'} />
             </div>
@@ -48,11 +48,11 @@ export const BlogSection = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="flex-1 md:pl-[65px] space-y-10">
+        <div className="flex-1 md:pl-[65px] space-y-10 mt-16 md:mt-0">
           <h4 className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs text-gray-500">
             Popular posts
           </h4>
-          <div className="pt-96 md:pt-0 space-y-10">
+          <div className="md:pt-0 space-y-10">
             {blogPosts?.map(({ title, mainImage, alt, publishedAt, id }) => (
               <BlogPost
                 title={title}

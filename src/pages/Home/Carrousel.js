@@ -24,7 +24,7 @@ export const Carrousel = () => {
 
       <div
         className="flex overflow-scroll scrollbar-hide scroll-smooth 
-      p-4 -ml-4"
+      md:p-4 md:-ml-4"
       >
         <div className="flex space-x-10">
           {featuredProperties?.map(

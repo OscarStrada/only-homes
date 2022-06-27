@@ -23,9 +23,10 @@ export const AppRouter = () => {
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="houses" element={<Houses />} />
         </Route>
+
+        <Route path="blog" element={<Blog />} />
+        <Route path="houses" element={<Houses />} />
 
         <Route path="*" element={<DefaultRoute />} />
       </Routes>

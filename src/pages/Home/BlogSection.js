@@ -18,7 +18,7 @@ export const BlogSection = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center md:-mt-16 px-5 md:px-20">
+    <section className="w-full flex justify-center md:-mt-16 px-5 md:px-20 pb-[180px]">
       <div className="w-full bg-white rounded-2xl md:p-[50px] flex flex-col md:flex-row">
         {/* Left */}
         <div className="relative">

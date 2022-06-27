@@ -2,7 +2,7 @@ import { PhoneIcon } from '@heroicons/react/solid';
 import { React, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-export const Navbar = () => {
+export const NavbarFixed = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeNavbar = () => {
@@ -10,7 +10,7 @@ export const Navbar = () => {
     const scrollY = window.scrollY;
     // const viewportHeight = window.innerHeight;
 
-    scrollY > 0 ? setNavbar(true) : setNavbar(false);
+    scrollY >= 0 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener('scroll', changeNavbar);

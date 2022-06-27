@@ -13,7 +13,7 @@ export const Title = ({ title, subtitle, isForWhiteBackground, isLeft }) => {
       <h2
         className={`${isForWhiteBackground ? 'text-white' : 'text-[#061D3A]'} ${
           isLeft ? 'md:text-[34px]' : 'md:text-[48px]'
-        } text-4xl font-semibold pt-6 md:pt-8 leading-tight`}
+        } text-4xl font-semibold pt-6 md:pt-3 leading-tight`}
       >
         {title}
       </h2>

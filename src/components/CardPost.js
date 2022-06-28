@@ -1,19 +1,12 @@
 import { Button } from '../components/Button';
 
-export const CardPost = ({
-  image,
-  alt,
-  title,
-  location,
-  description,
-  price,
-}) => {
+export const CardPost = ({ image, alt, title, description, date }) => {
   return (
     <section>
       {/* Container */}
-      <div className="flex flex-col rounded-lg bg-[#fafafa]">
+      <div className="flex flex-col rounded-lg bg-[#fafafa] md:hover:scale-105 transform transition duration-300 ease-out">
         {/* Top */}
-        <div className="w-full h-[275px] rounded-t-lg">
+        <div className="w-full h-[260px] rounded-t-lg">
           <img
             src={image}
             alt={alt}
@@ -21,10 +14,12 @@ export const CardPost = ({
           />
         </div>
         {/* Bottom */}
-        <div className="p-7 md:p-10 space-y-7">
-          <h2 className="text-xl font-semibold">{title}</h2>
-          <p className="text-sm font-light leading-relaxed">{description}</p>
-          <div className="w-[180px] pt-7">
+        <div className="min-h-[320px] relative p-7 md:p-10 flex flex-col">
+          <div className="flex-1 space-y-5">
+            <h2 className="text-xl font-semibold">{title}</h2>
+            <p className="text-sm font-light leading-relaxed">{description}</p>
+          </div>
+          <div className="w-[180px] pt-10">
             <Button url={'/'} medium color="#657048" textcolor="#ffffff">
               Read more
             </Button>

@@ -21,7 +21,7 @@ export const BlogBanner = () => {
             isForWhiteBackground
           />
           <div className="w-[190px] md:w-[200px]">
-            <Button color={'white'} textColor="#061D3A" url={'/blog'}>
+            <Button color={'white'} textColor="#061D3A" url={'/contact'}>
               Contact Us
             </Button>
           </div>

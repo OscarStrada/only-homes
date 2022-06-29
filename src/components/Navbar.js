@@ -49,16 +49,16 @@ export const Navbar = () => {
               Homes
             </Link>
             <Link
-              to={'/contact'}
-              className="cursor-pointer hover:text-black text-sm"
-            >
-              Contact
-            </Link>
-            <Link
               to={'/blog'}
               className="cursor-pointer hover:text-black text-sm"
             >
               Blog
+            </Link>
+            <Link
+              to={'/contact'}
+              className="cursor-pointer hover:text-black text-sm"
+            >
+              Contact
             </Link>
           </ul>
 

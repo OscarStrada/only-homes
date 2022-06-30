@@ -1,6 +1,8 @@
 import { LabelPost } from './LabelPost';
 
-export const BlogPost = ({ date, image, title, alt, id }) => {
+export const BlogPost = ({ date, image, title, alt }) => {
+  console.log(date);
+
   return (
     <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-7 pb-7 md:p-3 rounded-lg hover:shadow-xl hover:scale-105 transform transition duration-300 ease-out">
       <div className="w-full h-72 md:w-32 md:h-32">

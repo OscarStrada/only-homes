@@ -1,6 +1,6 @@
 import { Button } from '../components/Button';
 
-export const CardPost = ({ image, alt, title, description, date }) => {
+export const CardPost = ({ image, alt, title, description, query }) => {
   return (
     <section>
       {/* Container */}
@@ -14,13 +14,18 @@ export const CardPost = ({ image, alt, title, description, date }) => {
           />
         </div>
         {/* Bottom */}
-        <div className="min-h-[320px] relative p-7 md:p-10 flex flex-col">
+        <div className="min-h-[300px] relative p-7 md:p-10 flex flex-col">
           <div className="flex-1 space-y-5">
             <h2 className="text-xl font-semibold">{title}</h2>
             <p className="text-sm font-light leading-relaxed">{description}</p>
           </div>
-          <div className="w-[180px] pt-10">
-            <Button url={'/'} medium color="#657048" textcolor="#ffffff">
+          <div className="w-[140px]">
+            <Button
+              url={`/blog/${query}`}
+              small
+              color="#657048"
+              textcolor="#ffffff"
+            >
               Read more
             </Button>
           </div>

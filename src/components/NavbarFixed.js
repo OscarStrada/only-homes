@@ -3,7 +3,7 @@ import { React, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
 export const NavbarFixed = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(true);
 
   const changeNavbar = () => {
     // const heightNavbar = 80;

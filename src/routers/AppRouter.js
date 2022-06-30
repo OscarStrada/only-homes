@@ -5,6 +5,7 @@ import { Blog } from '../pages/Blog';
 import { Contact } from '../pages/Contact';
 import { Home } from '../pages/Home';
 import { Houses } from '../pages/Houses';
+import { PostDetails } from '../pages/PostDetails';
 
 const DefaultRoute = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ export const AppRouter = () => {
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="blog/:slug" element={<PostDetails />} />
         </Route>
 
         <Route path="blog" element={<Blog />} />

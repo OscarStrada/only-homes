@@ -8,12 +8,14 @@ import { urlFor, client } from '../client';
 
 export const Blog = () => {
   const [blogPosts, setBlogPosts] = useState(null);
+  console.log(blogPosts);
 
   useEffect(() => {
     const query = '*[_type == "post"]';
 
     client.fetch(query).then((data) => {
       setBlogPosts(data);
+      console.log(data);
     });
   }, []);
 
@@ -24,7 +26,7 @@ export const Blog = () => {
         <Title title={'Browse our Journal'} subtitle={'Recent posts'} isLeft />
         <div className="w-full grid md:grid-cols-3 gap-x-10 gap-y-12 py-16">
           {blogPosts?.map(
-            ({ title, mainImage, publishedAt, alt, description }) => (
+            ({ title, mainImage, publishedAt, alt, description, slug }) => (
               <CardPost
                 title={title}
                 image={urlFor(mainImage)}
@@ -32,6 +34,7 @@ export const Blog = () => {
                 key={title}
                 description={description}
                 date={publishedAt}
+                query={slug.current}
               />
             ),
           )}

@@ -7,8 +7,6 @@ import { Footer } from '../components/Footer';
 export const PostDetails = () => {
   const [blogPost, setBlogPost] = useState(null);
   const { slug } = useParams();
-  console.log(slug);
-  console.log('blogpost = ', blogPost);
 
   useEffect(() => {
     const query = `*[slug.current == "${slug}"]`;

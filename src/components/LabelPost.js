@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const LabelPost = ({ date }) => {
-  console.log(date);
   // const options = { year: 'numeric', month: 'long', day: 'numeric' };
   // const formatDate = new Intl.DateTimeFormat(options);
 

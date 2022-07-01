@@ -8,6 +8,7 @@ export const PropertyCard = ({
   location,
   description,
   price,
+  query,
 }) => {
   const usd = new Intl.NumberFormat('en-us');
 
@@ -40,7 +41,12 @@ export const PropertyCard = ({
             </div>
             {/* Button */}
             <div className="w-[100px]">
-              <Button small color={'#ea6c18'} textcolor="#ffffff" url={'/'}>
+              <Button
+                small
+                color={'#ea6c18'}
+                textcolor="#ffffff"
+                url={`/homes/${query}`}
+              >
                 Details
               </Button>
             </div>

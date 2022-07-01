@@ -53,13 +53,14 @@ export const BlogSection = () => {
             Popular posts
           </h4>
           <div className="md:pt-0 space-y-10">
-            {blogPosts?.map(({ title, mainImage, alt, publishedAt }) => (
+            {blogPosts?.map(({ title, mainImage, alt, publishedAt, slug }) => (
               <BlogPost
                 title={title}
                 image={urlFor(mainImage)}
                 alt={alt}
                 date={publishedAt}
                 key={title}
+                query={slug.current}
               />
             ))}
           </div>

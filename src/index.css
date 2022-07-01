@@ -46,3 +46,13 @@ code {
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+
+.h-custom {
+  background-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .h-custom {
+    height: 250px;
+  }
+}

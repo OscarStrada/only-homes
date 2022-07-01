@@ -45,7 +45,10 @@ export const Navbar = () => {
               navbar ? 'hidden lg:flex' : ''
             } uppercase text-[#556277] tracking-widest`}
           >
-            <Link to={'/'} className="cursor-pointer hover:text-black text-sm">
+            <Link
+              to={'/homes'}
+              className="cursor-pointer hover:text-black text-sm"
+            >
               Homes
             </Link>
             <Link

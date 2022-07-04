@@ -1,16 +1,23 @@
-import React from 'react';
 import { Button } from './Button';
+
+import { IoBedOutline } from 'react-icons/io5';
+import { BiBath } from 'react-icons/bi';
+import { FaExpand } from 'react-icons/fa';
+import { BsHouseDoor } from 'react-icons/bs';
 
 export const PropertyCard = ({
   image,
   alt,
   title,
   location,
-  description,
   price,
+  numOfBedrooms,
+  numOfBathrooms,
+  lotSize,
+  buildingSize,
   query,
 }) => {
-  const usd = new Intl.NumberFormat('en-us');
+  const formatNumber = new Intl.NumberFormat('en-us');
 
   return (
     <section>
@@ -30,14 +37,36 @@ export const PropertyCard = ({
           <h4 className="text-xl font-semibold">
             {title}, {location}
           </h4>
-          <p className="text-sm font-light">{description}</p>
+          {/* characteristic */}
+          <div className="flex w-full space-x-8">
+            <div className="flex flex-col items-center space-y-2">
+              <IoBedOutline />
+              <span>{numOfBedrooms}</span>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <BiBath />
+              <span>{numOfBathrooms}</span>
+            </div>
+
+            <div className="flex flex-col items-center space-y-2">
+              <FaExpand />
+              <span>{formatNumber.format(lotSize)}</span>
+            </div>
+
+            <div className="flex flex-col items-center space-y-2">
+              <BsHouseDoor />
+              <span>{formatNumber.format(buildingSize)}</span>
+            </div>
+          </div>
           <div className="flex justify-between items-end pt-4">
             {/* Price */}
             <div className="flex flex-col space-y-2 flex-1">
               <span className="font-inter font-normal uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs">
                 Price
               </span>
-              <span className="font-medium">${usd.format(price)} USD</span>
+              <span className="font-medium">
+                ${formatNumber.format(price)} USD
+              </span>
             </div>
             {/* Button */}
             <div className="w-[100px]">

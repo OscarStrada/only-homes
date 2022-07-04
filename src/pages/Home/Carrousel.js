@@ -28,7 +28,19 @@ export const Carrousel = () => {
       >
         <div className="flex space-x-10">
           {featuredProperties?.map(
-            ({ name, location, price, url, description, slug, _id }) => (
+            ({
+              name,
+              location,
+              price,
+              url,
+              description,
+              slug,
+              numOfBedrooms,
+              numOfBathrooms,
+              lotSize,
+              buildingSize,
+              _id,
+            }) => (
               <PropertyCard
                 key={_id}
                 image={urlFor(url)}
@@ -37,6 +49,10 @@ export const Carrousel = () => {
                 description={description}
                 price={price}
                 query={slug.current}
+                numOfBedrooms={numOfBedrooms}
+                numOfBathrooms={numOfBathrooms}
+                lotSize={lotSize}
+                buildingSize={buildingSize}
               />
             ),
           )}

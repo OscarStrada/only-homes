@@ -30,7 +30,20 @@ export const SingleHome = () => {
   return (
     <div>
       {property?.map(
-        ({ _id, name, url, price, location, gallery, description }) => (
+        ({
+          _id,
+          name,
+          url,
+          price,
+          location,
+          gallery,
+          description,
+          numOfBedrooms,
+          numOfBathrooms,
+          numOfPools,
+          lotSize,
+          buildingSize,
+        }) => (
           <div key={_id}>
             {/* banner */}
             {console.log('gallery = ', gallery[0])}
@@ -53,22 +66,29 @@ export const SingleHome = () => {
                 <CharacteristicCard
                   characteristicName={'Bedrooms'}
                   icon={<IoBedOutline className="text-2xl" />}
+                  characteristic={numOfBedrooms}
                 />
                 <CharacteristicCard
                   characteristicName={'Bathrooms'}
                   icon={<BiBath className="text-2xl" />}
+                  characteristic={numOfBathrooms}
                 />
                 <CharacteristicCard
                   characteristicName={'Lot size'}
                   icon={<FaExpand className="text-2xl" />}
+                  characteristic={lotSize}
+                  measurement={'SqFt'}
                 />
                 <CharacteristicCard
                   characteristicName={'Building size'}
                   icon={<BsHouseDoor className="text-2xl" />}
+                  characteristic={buildingSize}
+                  measurement={'SqFt'}
                 />
                 <CharacteristicCard
                   characteristicName={'Pool'}
                   icon={<FaSwimmingPool className="text-2xl" />}
+                  characteristic={numOfPools}
                 />
               </div>
               {/* Grid Images */}

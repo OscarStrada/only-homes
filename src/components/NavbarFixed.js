@@ -52,16 +52,16 @@ export const NavbarFixed = () => {
               Homes
             </Link>
             <Link
-              to={'/contact'}
-              className="cursor-pointer hover:text-black text-sm"
-            >
-              Contact
-            </Link>
-            <Link
               to={'/blog'}
               className="cursor-pointer hover:text-black text-sm"
             >
               Blog
+            </Link>
+            <Link
+              to={'/contact'}
+              className="cursor-pointer hover:text-black text-sm"
+            >
+              Contact
             </Link>
           </ul>
 
@@ -72,7 +72,7 @@ export const NavbarFixed = () => {
             }`}
           >
             <PhoneIcon className="h-5" />
-            <span className="tracking-wider text-sm">+52 222 928 4704</span>
+            <span className="tracking-wider text-sm">+52 993 322 7532</span>
           </div>
         </div>
       </nav>

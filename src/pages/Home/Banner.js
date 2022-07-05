@@ -41,7 +41,7 @@ export const Banner = () => {
           </div>
 
           <div className="pl-[25px] md:pl-[80px] w-[240px] md:w-[300px]">
-            <Button border={'white'} textcolor={'white'} url={'/houses'}>
+            <Button border={'white'} textcolor={'white'} url={'/homes'}>
               All properties
             </Button>
           </div>

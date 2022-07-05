@@ -4,6 +4,7 @@ import { Navbar } from '../components/Navbar';
 import { Blog } from '../pages/Blog';
 import { Contact } from '../pages/Contact';
 import { Home } from '../pages/Home';
+import { Homes } from '../pages/Homes';
 import { PostDetails } from '../pages/PostDetails';
 import { SingleHome } from '../pages/SingleHome';
 
@@ -28,6 +29,7 @@ export const AppRouter = () => {
           <Route path="homes/:slug" element={<SingleHome />} />
         </Route>
 
+        <Route path="homes" element={<Homes />} />
         <Route path="blog" element={<Blog />} />
         <Route path="*" element={<DefaultRoute />} />
       </Routes>

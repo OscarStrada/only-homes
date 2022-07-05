@@ -27,13 +27,13 @@ export const BlogSection = () => {
             src="/images/tuluminvest/3.jpg"
             alt=""
           />
-          <div className="relative md:absolute md:-bottom-10 md:left-[calc(50%-235px)]">
+          <div className="relative md:absolute md:-bottom-16 md:left-[calc(50%-235px)]">
             <div className="md:w-[155px] absolute -top-5 left-9">
               <LabelPost date={'April 18, 2021'} />
             </div>
             <div className="md:w-[470px] bg-white px-9 py-12 rounded-xl shadow-3xl space-y-7">
               <h4 className="text-2xl font-semibold text-[#061D3A]">
-                What will website be like in 100 years?
+                What you should investing in Tulum this 2023?
               </h4>
               <p className="text-gray-500 leading-relaxed">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

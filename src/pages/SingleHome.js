@@ -3,18 +3,20 @@ import { useParams } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { Footer } from '../components/Footer';
 import { CharacteristicCard } from '../components/CharacteristicCard';
-import { Button } from '../components/Button';
 import { urlFor, client } from '../client';
 
 import { IoBedOutline } from 'react-icons/io5';
 import { BiBath } from 'react-icons/bi';
 import { FaExpand, FaSwimmingPool } from 'react-icons/fa';
 import { BsHouseDoor } from 'react-icons/bs';
+import { ContactForm } from '../components/ContactForm';
 
 export const SingleHome = () => {
   const [property, setProperty] = useState(null);
   const { slug } = useParams();
   const usd = new Intl.NumberFormat('en-us');
+  const imagePath = '../images/rogelio.jpg';
+
   {
     property && console.log(property[0]);
   }
@@ -43,10 +45,11 @@ export const SingleHome = () => {
           numOfPools,
           lotSize,
           buildingSize,
+          agent,
         }) => (
           <div key={_id}>
             {/* banner */}
-            {console.log('gallery = ', gallery[0])}
+            {console.log('agent = ', agent)}
             <div className="relative w-full h-[700px]">
               <Hero source={urlFor(url)} />
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
@@ -129,74 +132,11 @@ export const SingleHome = () => {
                 <p>{description}</p>
                 {/* Contact form */}
                 <section className="md:pl-14">
-                  <div className="h-[600px] border-[1px] border-gray-100 rounded-xl p-5 md:p-10 flex flex-col space-y-14">
-                    {/* Top */}
-                    <div className="w-full flex space-x-8 items-center">
-                      <div className="rounded-full w-28 h-28 bg-gray-100"></div>
-                      <div className="w-full h-full flex-1 flex flex-col space-y-2">
-                        {/* Location */}
-                        <p
-                          className="font-inter font-normal uppercase tracking-[0.15em] 
-                    md:tracking-[0.2em] text-xs"
-                        >
-                          Location agent
-                        </p>
-                        {/* Name */}
-                        <h3 className="text-xl font-medium">Rogelio Roca</h3>
-                        {/* Social icons */}
-                        <div className="flex items-end space-x-3 flex-1">
-                          <div className="rounded-full w-10 h-10 bg-gray-100"></div>
-                          <div className="rounded-full w-10 h-10 bg-gray-100"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col w-full flex-1 space-y-10">
-                      <div className="flex-1 flex flex-col justify-between">
-                        <div className="space-y-2">
-                          <span className="font-semibold text-sm">Name</span>
-                          <div className="w-full border-[1px] border-gray-100 rounded-md">
-                            <input
-                              type="name"
-                              placeholder="Name"
-                              className="w-full px-3 py-2 text-sm font-light"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="space-y-2">
-                          <span className="font-semibold text-sm">Email</span>
-                          <div className="w-full border-[1px] border-gray-100 rounded-md">
-                            <input
-                              type="email"
-                              placeholder="Email"
-                              className="w-full px-3 py-2 text-sm font-light"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="space-y-2">
-                          <span className="font-semibold text-sm">Phone</span>
-                          <div className="w-full border-[1px] border-gray-100 rounded-md">
-                            <input
-                              type="phone"
-                              placeholder="Phone"
-                              className="w-full px-3 py-2 text-sm font-light"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <Button
-                          url={'/contact'}
-                          color={'#ea6c18'}
-                          textcolor="#ffffff"
-                          medium
-                        >
-                          Send
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
+                  <ContactForm
+                    image={imagePath}
+                    name={'Rogelio Roca'}
+                    color={'#ea6c18'}
+                  />
                 </section>
               </div>
             </div>

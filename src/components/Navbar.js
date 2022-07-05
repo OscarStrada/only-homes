@@ -72,7 +72,7 @@ export const Navbar = () => {
             }`}
           >
             <PhoneIcon className="h-5" />
-            <span className="tracking-wider text-sm">+52 222 928 4704</span>
+            <span className="tracking-wider text-sm">+52 993 322 7532</span>
           </div>
         </div>
       </nav>
